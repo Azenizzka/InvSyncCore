@@ -20,7 +20,6 @@ public class SyncController {
 	@ResponseBody
 	public ResponseEntity<HttpStatus> syncJson(@PathVariable String uuid, @RequestBody String json) throws IOException {
 		syncService.syncJson(uuid, json);
-
 		return new ResponseEntity<>(HttpStatus.OK);
 	}
 
